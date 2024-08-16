@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiffin Service Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Tiffin Service</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Our Tiffin Service</h2>
+        <p>Order delicious home-cooked meals delivered right to your door!</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <h3>Dish 1</h3>
+            <p>Description of Dish 1</p>
+            <button onclick="addToOrder('Dish 1')">Order</button>
+        </div>
+        <div class="menu-item">
+            <h3>Dish 2</h3>
+            <p>Description of Dish 2</p>
+            <button onclick="addToOrder('Dish 2')">Order</button>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2>User Reviews</h2>
+        <div id="reviews-container"></div>
+        <textarea id="review-text" placeholder="Leave a review"></textarea>
+        <button onclick="submitReview()">Submit Review</button>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login">
+        <h2>User Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
